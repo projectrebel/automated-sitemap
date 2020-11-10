@@ -1,0 +1,36 @@
+{
+    "name": "projectrebel/automated-sitemap",
+    "description": "Create and schedule a command to generate a sitemap periodically.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nolan Nordlund",
+            "email": "nolan@projectrebel.io"
+        }
+    ],
+    "require": {
+        "spatie/laravel-sitemap": "^5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ProjectRebel\\AutomatedSitemap\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ProjectRebel\\AutomatedSitemap\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProjectRebel\\AutomatedSitemap\\AutomatedSitemapServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.4"
+    }
+}
