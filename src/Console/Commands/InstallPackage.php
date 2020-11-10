@@ -20,10 +20,6 @@ class InstallPackage extends Command
             '--tag' => "config"
         ]);
 
-        $this->info('Scheduling command...');
-
-        $this->info('Adding route...');
-
         $this->info('Finished!');
     }
 }

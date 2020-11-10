@@ -20,8 +20,6 @@ class InstallPackageTest extends TestCase
         $this->artisan('sitemap:install')
             ->expectsOutput('Installing projectrebel/automated-sitemap...')
             ->expectsOutput('Publishing configuration from spatie/laravel-sitemap...')
-            ->expectsOutput('Scheduling command...')
-            ->expectsOutput('Adding route...')
             ->expectsOutput('Finished!')
             ->assertExitCode(0);
 
