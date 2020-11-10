@@ -4,6 +4,7 @@ namespace ProjectRebel\AutomatedSitemap;
 
 use Illuminate\Support\ServiceProvider;
 use Spatie\Sitemap\SitemapServiceProvider;
+use ProjectRebel\AutomatedSitemap\Console\Commands\InstallPackage;
 use ProjectRebel\AutomatedSitemap\Console\Commands\GenerateSitemap;
 
 class AutomatedSitemapServiceProvider extends ServiceProvider
@@ -18,7 +19,8 @@ class AutomatedSitemapServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateSitemap::class,
-        ]);
+                InstallPackage::class,
+            ]);
         }
     }
 }
