@@ -1,6 +1,6 @@
 {
     "name": "projectrebel/automated-sitemap",
-    "description": "Create and schedule a command to generate a sitemap periodically.",
+    "description": "Create and daily update your website's sitemap.",
     "type": "library",
     "license": "MIT",
     "authors": [
